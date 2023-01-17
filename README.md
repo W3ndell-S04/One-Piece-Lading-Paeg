@@ -43,6 +43,6 @@ Here are the technologies used in this project.
 
   ## Authors
 
-  * **Wendell Lao Soares** 
+  * **Wendell Lago Soares** 
 
  
