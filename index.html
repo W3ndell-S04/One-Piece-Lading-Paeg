@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./src/img/favicon (1).ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variaveis.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <title>One Piece Tributo</title>
+</head>
+<body>
+    <section class="fundo-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <div class="carregando"></div>
+
+    <header>
+        <a href="/">
+            <img class="logo" src="./src/img/logo1.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Detalhes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="informacoes">
+                <img class="imagem-titulo" src="./src/img/one-piece-logo.png" alt="imagem do título do filme">
+                <p class="descricao">A série foca em Monkey D. Luffy, um jovem feito de borracha, que, inspirado em seu ídolo de infância, o poderoso pirata Shanks, o Ruivo, parte em uma jornada do mar do East Blue para encontrar o tesouro mítico, o One Piece, e proclamar-se o Rei dos Piratas.</p>
+                <button class="botao-trailer">Veja o trailer</button>
+            </div>
+            <img class="mario" src="./src/img/chapeus de palha_resized.png" alt="chapeus de palha">
+        </div>
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">❌</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xmbxe0Jtxmc" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

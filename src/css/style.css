@@ -1,0 +1,134 @@
+html {
+  color: var(--cor-branca);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins";
+  background-color: var(--cor-fundo-escuro);
+}
+
+.carregando {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("../img/luffy\ gifi.gif") 50% 50% no-repeat
+    var(--cor-fundo-primaria);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header .logo {
+  max-width: 65px;
+  background: none;
+}
+
+header nav {
+  display: flex;
+}
+
+header .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav li a {
+  font-weight: bold;
+  color: var(--cor-branca);
+  font-size: 25px;
+  padding: 10px 20px;
+  transition: 0.2s;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+header nav li a:hover {
+  transition: 0.3s;
+  background: var(--cor-botao-hover);
+}
+
+main {
+  display: flex;
+  min-height: calc(100vh - 132px);
+  justify-content: center;
+}
+
+main .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  padding: 0 30px;
+}
+
+main .hero .informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 750px;
+  transition: 0.2s;
+}
+
+main .hero .descricao {
+  color: #a8adb7;
+  width: 90%;
+  font-size: 18px;
+}
+
+main .hero .botao-trailer {
+  padding: 15px;
+  color: var(--cor-branca);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--cor-botao);
+  transition: 0.5s all ease-in-out;
+}
+
+main .hero .botao-trailer:hover {
+  transform: scale(1.1);
+}
+
+main .hero .imagem-titulo {
+  max-width: 500px;
+}
+
+.fundo-video {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.fundo-video::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* mostrar como fazer esse efeito aqui https://cssgradient.io/ */
+  background: linear-gradient(
+    90deg,
+    var(--cor-fundo-escuro) 0%,
+    rgba(0, 0, 0, 0.85) 49%,
+    var(--cor-fundo-escuro) 100%
+  );
+}
+
+.fundo-video .video {
+  height: 100%;
+}
